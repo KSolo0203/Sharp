@@ -1,0 +1,12 @@
+﻿int a = 5;
+int b = 6;
+int c = 7;
+int d = 2;
+int e = 8;
+int max = a;
+if (max < b) max = b;
+if (max < c) max = c;
+if (max < d) max = d;
+if (max < e) max = e;
+Console.WriteLine("Наибольшее число:");
+Console.WriteLine(max);
