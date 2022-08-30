@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+Console.WriteLine("Введите число");
+
+string userIn = Console.ReadLine();
+
+int number = int.Parse(userIn);
+
+int sqr = number * number;
+
+Console.WriteLine($"Квадрат этого числа - {sqr}");
