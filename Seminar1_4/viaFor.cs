@@ -1,6 +1,4 @@
-﻿using System;
-
-Console.WriteLine ("Введите некоторое число");
+﻿Console.WriteLine ("Введите некоторое число");
 
 string userIn = Console.ReadLine ();
 
@@ -10,8 +8,7 @@ int count = number;
 
 number = -1 * number;
 
-while (number <= count) {
-
-    Console.Write ($"{number} ");
-    number += 1;
-} 
+for (int i = number; i <= count; i++)
+{
+    Console.Write ($"{i} ");
+}

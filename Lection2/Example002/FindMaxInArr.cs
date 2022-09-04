@@ -33,19 +33,25 @@ int Max(int[] array) // найти максимальное значение в 
     return result;
 }
 
-int IndexOf(int[] array, int find) // вернуть индекс искомого значения либо -1
+void IndexOf(int[] collection, int find) 
 {
-    int n = array.Length;
+    int count = collection.Length;
     int index = 0;
-    int indicator = -1;
-    while (index < n) {
-        if (array[index] == find) {
-        indicator = index;
-        // можно добавить break на случай, если надо найти первое, а не последнее найденное соответствие и выйти;
+    int position = -1;
+    while (index < count)
+    {
+        if (collection[index] == find)
+        {
+            position = index;
+            Console.WriteLine ($"Найдена позиция: {position+1}");
         }
+        
         index ++;
     }
-    return indicator;
+    if (position == -1)
+    {
+        Console.WriteLine("Нет такого значения");
+    }
 }
 
 int[] vector = new int[20];
@@ -56,4 +62,32 @@ PrintArray(vector); // первая строка это весь массив
 
 Console.WriteLine(Max(vector)); // вторая строка это максимум в массиве
 
-Console.WriteLine(IndexOf(vector,5)); // третья строка это индекс искомого вхождения
+int lever = 1;
+while (lever == 1)
+{
+    Console.WriteLine("Введите целое число, индекс которого необходимо найти: ");
+    string UserIn = Console.ReadLine();
+    if (int.TryParse(UserIn, out int X3) == true)
+    {
+        IndexOf(vector,int.Parse(UserIn));
+    }
+    else
+    {
+        Console.WriteLine("Это не число!");
+    }
+    lever = 2;
+    while (lever > 1)
+    {
+        Console.WriteLine("Повторить? Y/N");
+        UserIn = Console.ReadLine();
+        lever = 0;
+        if (UserIn.ToLower() == "y")
+        {
+            lever = 1;
+        }
+        else if (UserIn.ToLower() == "n")
+        {
+            lever = 0;
+        }
+    }
+}
