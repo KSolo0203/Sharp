@@ -1,2 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая по заданному номеру
+// четверти, показывает диапазон возможных координат
+// точек в этой четверти (x и y).
+
+Console.WriteLine("Введите номер четверти");
+int x = int.Parse(Console.ReadLine()!);
+if (x == 1)
+    Console.WriteLine("В этой четверти X и Y всегда больше нуля.");
+else if (x == 2)
+    Console.WriteLine("В этой четверти X всегда меньше, а Y всегда больше нуля.");
+else if (x == 3)
+    Console.WriteLine("В этой четверти X и Y всегда меньше нуля.");
+else if (x == 4)
+    Console.WriteLine("В этой четверти X всегда больше, а Y всегда меньше нуля.");
+else
+    Console.WriteLine("В декартовой системе координат четвертей всего четыре!");
