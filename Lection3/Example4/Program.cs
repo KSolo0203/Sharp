@@ -4,7 +4,7 @@
     int index = 0;
     while (index < size)
     {
-        collection[index] = new Random().Next(1,100);
+        collection[index] = new Random().Next(1,100); // числа от 0 до 99
         index ++;
     }
 }
@@ -32,7 +32,7 @@ void SelectionSort(int[] array) {
     }
 }
 
-int[] arr = new int[15];
+int[] arr = new int[15]; // размер - 15 элементов
 FillArray(arr);
 PrintArray(arr);
 SelectionSort(arr);

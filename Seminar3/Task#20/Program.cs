@@ -9,7 +9,7 @@ int yA = int.Parse(parts[1]);
 
 Console.WriteLine("Введите через пробел координаты X и Y точки B:");
 xy = Console.ReadLine()!;
-parts = xy.Split (' ');
+parts = xy.Split (' ',',');
 int xB = int.Parse(parts[0]);
 int yB = int.Parse(parts[1]);
 
