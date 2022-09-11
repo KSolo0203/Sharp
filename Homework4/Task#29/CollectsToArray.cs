@@ -14,8 +14,10 @@ int[] ParseEachSubstr(string[] s) {
             result[j] = ParsedNumber;
             j++;
         }
-        else if (int.TryParse(s[i], out ParsedNumber) && j == result.Length)
-            Console.WriteLine("!!! Excession of integers !!! The latter will not be added to the array !!!"); 
+        else if (int.TryParse(s[i], out ParsedNumber) && j == result.Length) {
+            exc++;
+            Console.WriteLine($"!!! Excession of integers !!! {exc} latter numbers was not added to the array !!!");
+        }
     }
     return result;
 }
