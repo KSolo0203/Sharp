@@ -1,5 +1,8 @@
 ﻿// Пользователь вводит 8 чисел. Поместите их в массив и распечатайте.
 
+string[] words = UIcollectsSplittedString();
+PrintArray(ParseEachSubstr(words));
+
 string[] UIcollectsSplittedString() { // user interface collects splitted string as array of strings
     Console.WriteLine ("Пожалуйста, введите 8 чисел.");
     string[] words = Console.ReadLine().Split(" ");
@@ -32,6 +35,3 @@ void PrintArray(int[] array) {
     }
     Console.WriteLine();
 }
-
-string[] words = UIcollectsSplittedString();
-PrintArray(ParseEachSubstr(words));
