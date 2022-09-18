@@ -16,7 +16,5 @@ int yB = int.Parse(parts[1]);
 int zB = int.Parse(parts[2]);
 
 double CubeDiagonal = Math.Sqrt(Math.Pow(xA - xB, 2) + Math.Pow(yA - yB, 2) + Math.Pow(zA - zB, 2));
-// что тождественно и проще, чем:
-// Math.Sqrt(Math.Pow(Math.Sqrt(Math.Pow(xA - xB, 2) + Math.Pow(yA - yB, 2)), 2)) + Math.Pow(zA - zB, 2)))
 
 Console.WriteLine($"Расстояние между этими двумя точками равно {CubeDiagonal:F2} единиц.");

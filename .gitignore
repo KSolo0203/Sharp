@@ -3,6 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Images & other satellite files
+*.jpg
+*.jpeg
+*.svg
+*.png
+*.bmp
+
 # User-specific files
 *.rsuser
 *.suo
