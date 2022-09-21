@@ -7,7 +7,7 @@ float[,] coeffs = {{0,0},
 Interface(coeffs);
 float x = (coeffs[1,1]-coeffs[0,1])/(coeffs[0,0]-coeffs[1,0]);
 float y = (coeffs[0,0]*x + coeffs[0,1]);
-Console.WriteLine($"Прямые с вышеобъявленными коэффициентами пересекаются в точке с координатами {x},{y}");
+Console.WriteLine($"Прямые с вышеобъявленными коэффициентами пересекаются в точке с координатами {x:F3},{y:F3}");
 
 float[,] Interface(float[,] coeffs)
 {
