@@ -1,0 +1,1 @@
+﻿System.Console.WriteLine("Давно пора заканчивать с VSCode!");
