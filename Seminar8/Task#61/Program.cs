@@ -2,6 +2,7 @@
 
 Console.Clear();
 
+// const int cellWidth = 4;
 MakePascalTriangle(AskHowMany());
 
 int AskHowMany()
@@ -49,7 +50,15 @@ void PrintRow(List<int> row)
     {
         foreach (int element in row)
         {
-            Console.Write($"{element} ");
+            //if (element % 2 != 0)
+            //{ 
+            //    Console.Write($"* ", cellWidth);
+            //}
+            //else
+            //{
+            //    Console.Write($"  ", cellWidth);
+            //}
+            Console.Write($"{element}");
         }
     }
 }

@@ -11,14 +11,14 @@ if (IsMatricesConsistent(matrix1, matrix2))
     int[,] product = MultiplyMatrices(matrix1, matrix2);
     PrintMatrices(matrix1, matrix2, product);
 }
-else
-{
+else 
+{ 
     Console.WriteLine("Матрицы не согласованы, вычислить произведение невозможно. Начните заново.");
 }
 
 bool IsMatricesConsistent(int[,] matrix1, int[,] matrix2)
 {
-    return matrix1.GetLength(1) == matrix2.GetLength(0);
+    return matrix1.GetLength(1) == matrix2.GetLength(0); // throw new Exception ("Матрицы не согласованы, вычислить произведение невозможно. Начните заново.");
 }
 
 int[,] MultiplyMatrices(int[,] matrix1, int[,] matrix2)
